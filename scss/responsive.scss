@@ -1,0 +1,596 @@
+$primary: #2f9dff;
+$dark: #000;
+$light: #fff;
+
+*,
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media (max-width: 700px){
+    html{
+        font-size: 50%;
+    }
+
+    .all{
+        height: 60vh;
+        & .img{
+            width: 100%;
+            height: 60vh;
+        }
+        header{
+            padding: 1rem;
+            height: 60vh;
+            nav{
+                & .fa-xmark{
+                    display: block;
+                    color: $light;
+                    font-size: 1.6rem;
+                    text-align: right;
+                }
+                & .fa-bars{
+                    display: block;
+                    color: $light;
+                    font-size: 1.6rem;
+                }
+                & img{
+                    float: left;
+                }
+                ul{
+                    height: 100vh;
+                    width: 200px;
+                    background: $primary;
+                    position: fixed;
+                    left: -300px;
+                    top: 0;
+                    padding: 3rem 1rem;
+                    transition: 1s ease-in-out;
+                    z-index: 4;
+                    li{
+                        display: block;
+                        margin-top: 2rem;
+                        & a{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+            .side{
+                & .icons{
+                    display: none;
+                }
+                .tab0{
+                    .btn0{
+                        width: 50vw;
+                    }
+                    & .room{
+                        width: 100%;
+                        left: 0;
+                        height: 50vh;
+                        .span {
+                            .div{
+                                gap: 0;
+                                input{
+                                    width: 100%; 
+                                }
+                            }
+                            & select{
+                                width: 95%;
+                            }
+                        } 
+                        & select{
+                            width: 100%;
+                        }
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .navbar-cng{
+                a{
+                    img{
+                        display: none;
+                    }
+                }
+                & .side{
+                    float: right;
+                    .icons{
+                        display: none;
+                    }
+                    .tab0{
+                        .btn0{
+                            width: 50vw;
+                        }
+                        & .room{
+                            width: 100%;
+                            left: -800px;
+                            height: 50vh;
+                            .span {
+                                .div{
+                                    gap: 0;
+                                    input{
+                                        width: 100%; 
+                                    }
+                                }
+                                & select{
+                                    width: 95%;
+                                }
+                            } 
+                            & select{
+                                width: 100%;
+                            }
+                            button{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section1{
+        padding: 4rem 1rem;
+        & .sect1{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .left{
+                width: 100%;
+                h6{
+                    font-size: 18px;
+                }
+                h1{
+                    font-size: 25px;
+                }
+                p{ 
+                    letter-spacing: 0.02em; 
+                    line-height: 1.6rem;
+                    font-size: 14px;
+                }
+                a{
+                    font-size: 21px;
+                }
+            }
+            .right{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                & img:nth-child(1){
+                    margin-right: 0;
+                    width: 100%;
+                }
+                & img:nth-child(2){
+                    position: relative;
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .section2{
+        padding: 4rem 1rem;
+        .sect2{
+            & .title{
+                h6{
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 25px;
+                }
+            }
+        }
+    }    
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        .mini-cards{
+            width: 95%;
+            & .info{
+                h4{
+                    font-size: 21px;
+                }
+                li{
+                    font-size: 14px;
+                }
+                & button{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .section3{
+        .sect3{
+            padding-top: 10rem;
+            height: 50vh;
+            h6{
+                font-size: 21px;
+            }
+            h2{
+                font-size: 25px;
+            }
+        }
+    }
+
+    .section4{
+        padding: 4rem 1rem;
+        & .sect4{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .right{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                & img:nth-child(1){
+                    margin-right: 0;
+                    width: 100%;
+                }
+                & img:nth-child(2){
+                    margin-top: 3rem;
+                    position: relative;
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+            .left{
+                width: 100%;
+                h6{
+                    font-size: 18px;
+                }
+                h1{
+                    font-size: 25px;
+                }
+                p{
+                    letter-spacing: 0.02em; 
+                    line-height: 1.6rem;
+                    font-size: 14px;
+                }
+                a{
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
+    .section5{
+        padding: 4rem 0;
+        .sect5{
+            & .title{
+                h6{
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 25px;
+                }
+            }
+            .blocks{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                & .mini-block{
+                    width: 100%;
+                    .info{
+                        margin-top: -65%;
+                        gap: 15rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .section6{
+        padding: 3rem 2rem;
+        .sect6{
+            h2{
+                font-size: 14px;
+                font-weight: 600;
+            }
+            & button{
+                width: 50%;
+            }
+        }
+    }
+
+    footer{
+        .insta{
+            .container{
+                height: 10vh;
+                .overlay{
+                    .text{
+                        top: 90%;
+                    }
+                }
+            }
+        }
+        .foot{
+            padding: 4rem 1rem;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+            .foot1{
+                width: 100%;
+                h4{
+                    font-size: 16px;
+                }
+                p{
+                    letter-spacing: 0.02em; 
+                    line-height: 1.6rem;
+                    font-size: 14px;
+                }
+                a{
+                    font-size: 14px;
+                }
+            }
+            .foot2{
+                width: 100%;
+                h4{
+                    font-size: 16px;
+                }
+                h6{
+                    font-size: 14px;
+                }
+                p{letter-spacing: 0.02em; line-height: 1.6rem;
+                    font-size: 14px;
+                }
+            }
+            .foot3{
+                width: 100%;
+                h4{
+                    font-size: 16px;
+                }
+                li{
+                    font-size: 14px;
+                }
+            }
+            .foot4{
+                width: 100%;
+                h4{
+                    font-size: 16px;
+                } 
+                .puts{
+                    input{
+                        width: 75%;
+                    }
+                    button{
+                        width: 20%;
+                    }
+                }
+                p{
+                    letter-spacing: 0.02em;
+                    font-size: 14px;
+                }
+            }
+        }
+        .rights{
+            margin-right: 3rem;
+            margin-left: 3rem;
+            display: grid;
+            text-align: center;
+            h5{
+                font-size: 14px;
+            }
+            .icons{
+                justify-content: center;
+                & i{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // Blogs pages
+    .section7{
+        padding: 4rem 1rem;
+        .sect7{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .blog-left{
+                width: 100%;
+                img{
+                    height: 30vh;
+                    width: 100%;
+                }
+                .one{
+                    margin-bottom: 15%;
+                    .blg {
+                        h3{
+                            display: none;
+                        }
+                    }
+                    .lft{
+                        p{
+                            letter-spacing: 0.02em; 
+                            line-height: 1.6rem;
+                            margin-top: 1rem;
+                        }
+                        h6{
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+            .blog-right{
+                width: 100%;
+                padding: 1rem;
+                .two{
+                    input{
+                        width: 100%;
+                    }
+                    i{
+                        right: 13%;
+                        margin-top: 2rem;
+                        font-size: 14px;
+                    }
+                }
+                .end{
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .buts{
+            margin-left: 1%;
+        }
+    }
+
+    .section8{
+        padding: 4rem 1rem;
+        .sect8{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .blog-left{
+                width: 100%;
+                img{
+                    height: 30vh;
+                    width: 100%;
+                }
+                .one{
+                    margin-bottom: 15%;
+                    .blg {
+                        h3{
+                            display: none;
+                        }
+                    }
+                    .lft{
+                        p{
+                            letter-spacing: 0.02em; 
+                            line-height: 1.6rem;
+                            margin-top: 1rem;
+                        }
+                        h6{
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+                .side-left-third{
+                    .third1{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        .wan{
+                            img{
+                                height: 10vh;
+                                width: 16%;
+                            }
+                            .fa-arrow-left{
+                                height: 10vh;
+                                width: 16%;
+                            }
+                        }
+                        .twan{
+                            margin-top: 2rem;
+                            img{
+                                height: 10vh;
+                                width: 16%;
+                            }
+                            .fa-arrow-right{
+                                height: 10vh;
+                                width: 28%;
+                            }
+                        }
+                    }
+                    .third2{
+                        height: 170vh;
+                        .ran{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            margin-bottom: 20px;
+                            margin-top: 10px;
+                            img{
+                                width: 16vw;
+                                height: 8vh;
+                            }
+                        }
+                        .ranA{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            margin-bottom: 10%;
+                            img{
+                                width: 16vw;
+                                height: 8vh;
+                            }
+                        }
+                    }
+                }
+                .side-left-fourth{
+                    .comment{
+                        .up{
+                            input{
+                                height: 7vh;
+                                width: 50%;
+                            }
+                        }
+                        .btn9{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .blog-right{
+                width: 100%;
+                padding: 1rem;
+                margin-top: 5rem;
+                .two{
+                    input{
+                        width: 100%;
+                    }
+                    i{
+                        right: 13%;
+                        margin-top: 2rem;
+                        font-size: 14px;
+                    }
+                }
+                .end{
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .buts{
+            margin-left: 1%;
+        }
+    }
+
+    // About page
+    .section9{
+        padding: 4rem 1rem;
+        .sect9{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .serve{
+                width: 100%;
+            }
+        }
+    }
+
+    
+    // contact page
+    .End{
+        padding: 3rem 1rem;
+        .sectEnd{
+            height: auto;
+            display: grid;
+            .contact{
+                width: 100%;
+                padding: 1rem;
+                .dress{
+                    display: grid;
+                }
+            }
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+}

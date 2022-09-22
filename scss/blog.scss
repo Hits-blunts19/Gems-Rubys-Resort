@@ -1,0 +1,828 @@
+$primary: #2f9dff;
+$dark: #000;
+$light: #fff;
+
+*,
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+// blog home
+.section7{
+    padding: 100px 90px;
+    .sect7{
+        display: flex;
+        justify-content: space-between;
+        .blog-left{
+            width: 64.3%;
+            .one{
+                margin-bottom: 5%;
+                .blg{
+                    h3{
+                        position: absolute;
+                        background: $primary;
+                        color: #fff;
+                        height: 16vh;
+                        width: 8vw;
+                        padding-top: 1rem;
+                        text-align: center;
+                        font-size: 21px;
+                        margin-top: -5%;
+                        margin-left: 4%;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: .3s ease-in-out;
+                    }                    
+                    & h3:hover{
+                        background: transparent;
+                        color: $primary;
+                    }
+                    span{
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 35px;
+                    }
+                }
+                .lft{
+                    margin-top: 5%;
+                    margin-left: 2%;
+                    a{
+                        color: #000;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 25px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: .3s ease-in-out;
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                    p{
+                        letter-spacing: 0.02em; 
+                        line-height: 1.6rem;
+                        font-size: 14px;
+                        margin-top: 1%;
+                        color: #555;
+                        line-height: 1.5rem;
+                        font-weight: 500;
+                    }
+                    h6{
+                        display: flex;
+                        gap: .5rem;
+                        a{
+                            font-size: 12px;
+                            color: #555;
+                            letter-spacing: 0.05em;
+                            font-weight: 500;
+                            margin-top: .3rem;
+                        }
+                    }
+                }
+            }
+        }
+        .blog-right{
+            width: 25vw;
+            padding: 1rem;
+            .two{
+                input{
+                    height: 7vh;
+                    width: 22.5vw;
+                    padding: 1rem;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                    border: 1px solid $primary;
+                    color: $primary;
+                    outline: none;
+                    &::placeholder{
+                        color: $primary;
+                    }
+                    &:focus::placeholder{
+                        color: transparent;
+                    }
+                }
+                i{
+                    position: absolute;
+                    margin-left: -2%;
+                    margin-top: 1%;
+                    color: $primary;
+                }
+            }
+            .three{
+                display: flex;
+                flex-direction: column;
+                margin-top: 35%;
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #f0e9ff;
+                    padding-bottom: 1rem;
+                    margin-bottom: 16%;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #666;
+                    border-bottom: 1px solid #f0e9ff;
+                    padding-bottom: .5rem;
+                    margin-bottom: 5%;
+                    letter-spacing: 0.04em;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+            .four{
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #f0e9ff;
+                    padding-bottom: 1rem;
+                    margin-top: 16%;
+                }
+                .posts{
+                    margin-top: 15%;
+                    span{
+                        display: flex;
+                        gap: 1rem;
+                        margin-bottom: 8%;
+                        div{
+                            margin-top: 1rem;
+                            a{
+                                font-size: 18px;
+                                font-weight: 600;
+                                font-family: 'Raleway', sans-serif;
+                                text-transform: capitalize;
+                                margin-top: 1rem;
+                                color: #000;
+                                transition: .3s ease-in-out;
+                                text-decoration: none;
+                                a:hover{
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        h6{
+                            font-size: 15px;
+                            color: #7e7e7e;
+                        }
+                    }
+                }
+            }
+            .five{
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #e4e4e4;
+                    padding-bottom: 1rem;
+                    margin-top: 16%;
+                }
+                .buns{
+                    margin-top: 9%;
+                    button{
+                        height: 5vh;
+                        width: auto;
+                        padding: 0 .5rem;
+                        border: 1px solid $primary;
+                        background: transparent;
+                        color: $primary;
+                        font-size: 13px;
+                        margin-bottom: 4%;
+                        transition: .2s ease-in-out;
+                        &:hover{
+                            background: $primary;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .six{
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #e4e4e4;
+                    padding-bottom: 1rem;
+                    margin-top: 16%;
+                }
+                .insta{
+                    margin-top: 16%;
+                    .ig{
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+            .end{
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #e4e4e4;
+                    padding-bottom: 1rem;
+                    margin-top: 16%;
+                }
+                input{
+                    height: 8vh;
+                    width: 22.5vw;
+                    padding: 1rem;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                    border: 1px solid $primary;
+                    outline: none;
+                    margin-top: 20%;
+                    &::placeholder{
+                        color: $primary;
+                    }
+                    &:focus::placeholder{
+                        color: transparent;
+                    }
+                }
+                button{
+                    height: 8vh;
+                    width: 22.5vw;
+                    border: 1px solid $primary;
+                    background-color: $primary;
+                    color: #fff;
+                    font-size: 16px;
+                    margin-top: 7%;
+                    transition: .2s ease-in-out;
+                    &:hover{
+                        color: $primary;
+                        border: 1px solid $primary;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .buts{
+        display: flex;
+        gap: 2rem;
+        margin-left: 15%;
+        margin-top: 7%;
+        button{
+            height: 3rem;
+            width: 3rem;
+            border: 1px solid #dddddd;
+            background: transparent;
+            color: #888;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover{
+                background: $primary;
+                border: 1px solid $primary;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// blog single
+.section8{
+    padding: 100px 90px;
+    .sect8{
+        display: flex;
+        justify-content: space-between;
+        .blog-left{
+            width: 64.3%;
+            .one{
+                margin-bottom: 5%;
+                .lft{
+                    margin-top: 5%;
+                    margin-left: 2%;
+                    h5{
+                        color: #000;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 22px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                    p{
+                        letter-spacing: 0.02em; 
+                        line-height: 1.6rem;
+                        font-size: 14px;
+                        margin-top: 1%;
+                        color: #555;
+                        line-height: 1.5rem;
+                        font-weight: 500;
+                    }
+                    h6{
+                        display: flex;
+                        gap: .5rem;
+                        a{
+                            font-size: 12px;
+                            color: #555;
+                            letter-spacing: 0.05em;
+                            font-weight: 500;
+                            margin-top: .3rem;
+                        }
+                    }
+                    .tom{
+                        margin-top: 5%;
+                        font-size: 15px;
+                        div{
+                            padding: 3rem;
+                            background: #f2f3f7;
+                            height: auto;
+                            p{
+                                letter-spacing: 0.02em; 
+                                line-height: 1.6rem;
+                                background: #fff;
+                                height: auto;
+                                padding: 1rem;
+                                border-left: 3px solid $primary;
+                                font-style: italic;
+                            }
+                        }
+                    }
+                    .ment{
+                        display: flex;
+                        justify-content: space-between;
+                        h3{
+                            font-size: 15px;
+                            color: #888;
+                            .fa-heart{
+                                color: $primary;
+                            }
+                        }
+                        .ico{
+                            display: flex;
+                            gap: .7rem;
+                            a{
+                                font-size: 15px;
+                                color: #888;
+                                &:hover{
+                                    color: $primary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .side-left-third{
+                margin-top: 15%;
+                border-top: 1px solid #eeeeee;
+                .third1{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5%;
+                    .wan{
+                        display: flex;
+                        gap: 1rem;
+                        cursor: pointer;
+                        .fa-arrow-left{
+                            position: absolute;
+                            color: #fff;
+                            font-size: 25px;
+                            height: 10vh;
+                            width: 4.5vw;
+                            padding: 1rem;
+                            opacity: 0;
+                            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+                        }
+                        span{
+                            h6{
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-bottom: 20px;
+                            }
+                            h4{
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
+                        }
+                        &:hover{
+                            opacity: .9;
+                            transition: 2s ease;
+                        }
+                        &:hover .fa-arrow-left{
+                            opacity: 1;
+                            transition: .7s ease;
+                        }
+                    }
+                    .twan{
+                        display: flex;
+                        gap: 1rem;
+                        cursor: pointer;
+                        .fa-arrow-right{
+                            position: relative;
+                            margin-left: -76px;
+                            color: #fff;
+                            font-size: 25px;
+                            height: 10vh;
+                            width: 4.5vw;
+                            padding: 1rem;
+                            opacity: 0;
+                            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+                        }
+                        span{
+                            h6{
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-bottom: 20px;
+                            }
+                            h4{
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
+                        }
+                        &:hover{
+                            opacity: .9;
+                            transition: 2s ease;
+                        }
+                        &:hover .fa-arrow-right{
+                            opacity: 1;
+                            transition: .7s ease;
+                        }
+                    }
+                }
+                .third2{
+                    margin-top: 8%;
+                    border: 1px solid #eeeeee;
+                    padding: 2rem;
+                    height: 115vh;
+                    h2{
+                        text-align: center;
+                        font-size: 35px;
+                        font-family: 'Raleway', sans-serif;
+                        margin-top: 5%;
+                        margin-bottom: 5%;
+                    }
+                    .ran{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 5%;
+                        .ran1{
+                            display: flex;
+                            gap: 1rem;
+                            span { 
+                                h6{
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: #9e9e9e;
+                                }
+                                p{letter-spacing: 0.02em; line-height: 1.6rem;
+                                    font-size: 14px;
+                                    color: #eeeeee;
+                                }
+                                h4{
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        .btn8{
+                            height: 6vh;
+                            width: 8vw;
+                            margin-top: 20px;
+                            border: 1px solid #eeeeee;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            &:hover{
+                                background: $primary;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .ranA{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 5%;
+                        width: 90%;
+                        margin-left: 10%;
+                        .ran1{
+                            display: flex;
+                            gap: 1rem;
+                            span { 
+                                h6{
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: #9e9e9e;
+                                }
+                                p{letter-spacing: 0.02em; line-height: 1.6rem;
+                                    font-size: 14px;
+                                    color: #eeeeee;
+                                }
+                                h4{
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        .btn8{
+                            height: 6vh;
+                            width: 8vw;
+                            margin-top: 20px;
+                            border: 1px solid #eeeeee;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            &:hover{
+                                background: $primary;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .side-left-fourth{
+                margin-top: 15%;
+                border: 1px solid #eeeeee;
+                height: auto;
+                padding: 2rem;
+                background: #fbfbff;
+                .comment{
+                    text-align: center;
+                    h5{
+                        text-align: center;
+                        font-size: 35px;
+                        font-family: 'Satisfy', sans-serif;
+                        margin-top: 5%;
+                        margin-bottom: 5%;
+                    }
+                    .up{
+                        display: flex;
+                        gap: 1.2rem;
+                        input{
+                            height: 7vh;
+                            width: 25vw;
+                            border: 1px solid $primary;
+                            padding-left: 2%;
+                            background: #fff;
+                            outline: none;
+                            &::placeholder{
+                                font-size: 12px;
+                                color: $primary;
+                            }
+                        }
+                    }
+                    .down{
+                        gap: 1.2rem;
+                        input{
+                            height: 7vh;
+                            width: 100%;
+                            border: 1px solid $primary;
+                            padding-left: 2%;
+                            background: #fff;
+                            margin-top: 3%;
+                            outline: none;
+                            &::placeholder{
+                                font-size: 12px;
+                                color: $primary;
+                            }
+                        }
+                        textarea{
+                            height: 20vh;
+                            width: 100%;
+                            border: 1px solid $primary;
+                            padding-left: 2%;
+                            padding-top: 2%;
+                            background: #fff;
+                            margin-top: 3%;
+                            outline: none;
+                            &::placeholder{
+                                font-size: 12px;
+                                color: $primary;
+                            }
+                            &:focus::placeholder{
+                                color: transparent;
+                            }
+                        }
+                    }
+                    .btn9{
+                        height: 7vh;
+                        width: 15vw;
+                        margin-top: 20px;
+                        border: 1px solid $primary;
+                        background: transparent;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: 600; 
+                        color: $primary;
+                        &:hover{
+                            color: #fff;
+                            border: 1px solid $primary;
+                            background: $primary;
+                        }
+                    }
+                }
+            }
+        }
+        .blog-right{
+            width: 25vw;
+            padding: 1rem;
+            .two{
+                input{
+                    height: 7vh;
+                    width: 22.5vw;
+                    padding: 1rem;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                    border: 1px solid $primary;
+                    color: $primary;
+                    outline: none;
+                    &::placeholder{
+                        color: $primary;
+                    }
+                    &:focus::placeholder{
+                        color: transparent;
+                    }
+                }
+                i{
+                    position: absolute;
+                    margin-left: -2%;
+                    margin-top: 1%;
+                    color: $primary;
+                }
+            }
+            .three{
+                display: flex;
+                flex-direction: column;
+                margin-top: 35%;
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #f0e9ff;
+                    padding-bottom: 1rem;
+                    margin-bottom: 16%;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #666;
+                    border-bottom: 1px solid #f0e9ff;
+                    padding-bottom: .5rem;
+                    margin-bottom: 5%;
+                    letter-spacing: 0.04em;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+            .four{
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #f0e9ff;
+                    padding-bottom: 1rem;
+                    margin-top: 16%;
+                }
+                .posts{
+                    margin-top: 15%;
+                    span{
+                        display: flex;
+                        gap: 1rem;
+                        margin-bottom: 8%;
+                        div{
+                            margin-top: 1rem;
+                            a{
+                                font-size: 18px;
+                                font-weight: 600;
+                                font-family: 'Raleway', sans-serif;
+                                text-transform: capitalize;
+                                margin-top: 1rem;
+                                color: #000;
+                                transition: .3s ease-in-out;
+                                text-decoration: none;
+                                a:hover{
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        h6{
+                            font-size: 15px;
+                            color: #7e7e7e;
+                        }
+                    }
+                }
+            }
+            .five{
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #e4e4e4;
+                    padding-bottom: 1rem;
+                    margin-top: 16%;
+                }
+                .buns{
+                    margin-top: 9%;
+                    button{
+                        height: 5vh;
+                        width: auto;
+                        padding: 0 .5rem;
+                        border: 1px solid $primary;
+                        background: transparent;
+                        color: $primary;
+                        font-size: 13px;
+                        margin-bottom: 4%;
+                        transition: .2s ease-in-out;
+                        &:hover{
+                            background: $primary;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .six{
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #e4e4e4;
+                    padding-bottom: 1rem;
+                    margin-top: 16%;
+                }
+                .insta{
+                    margin-top: 16%;
+                    .ig{
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+            .end{
+                h4{
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: capitalize;
+                    font-size: 45px;
+                    border-bottom: 1px solid #e4e4e4;
+                    padding-bottom: 1rem;
+                    margin-top: 16%;
+                }
+                input{
+                    height: 8vh;
+                    width: 22.5vw;
+                    padding: 1rem;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                    border: 1px solid $primary;
+                    outline: none;
+                    margin-top: 20%;
+                    &::placeholder{
+                        color: $primary;
+                    }
+                    &:focus::placeholder{
+                        color: transparent;
+                    }
+                }
+                button{
+                    height: 8vh;
+                    width: 22.5vw;
+                    border: 1px solid $primary;
+                    background-color: $primary;
+                    color: #fff;
+                    font-size: 16px;
+                    margin-top: 7%;
+                    transition: .2s ease-in-out;
+                    &:hover{
+                        color: $primary;
+                        border: 1px solid $primary;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .buts{
+        display: flex;
+        gap: 2rem;
+        margin-left: 15%;
+        margin-top: 7%;
+        button{
+            height: 3rem;
+            width: 3rem;
+            border: 1px solid #dddddd;
+            background: transparent;
+            color: #888;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover{
+                background: $primary;
+                border: 1px solid $primary;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+$primary: #2f9dff;
+$dark: #000;
+$light: #fff;
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    .mini-cards{
+        padding: 1rem;
+        margin-top: 3rem;
+        width: 29vw;
+        figure{
+            overflow: hidden;
+            img{
+                display: block;
+                transform: scale(1);
+                transition: .3s ease-in-out;
+            }
+        }
+        & .info{
+            margin-top: 1rem;
+            h4{
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #1f1f1f;
+            }
+            li{
+                list-style: disc;
+                margin-top: .6rem;
+                color: #1f1f1f;
+            }
+            & button{
+                margin-top: 2rem;
+                height: 7vh;
+                width: 25vw;
+                border: 1px solid $primary;
+                color: $primary;
+                font-size: 16px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    background: $primary;
+                    color: $light;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+        &:hover  figure img{
+            transform: scale(1.5);
+        }
+    }
+}

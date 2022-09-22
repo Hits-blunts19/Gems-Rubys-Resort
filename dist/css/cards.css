@@ -1,0 +1,48 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.cards .mini-cards {
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 29vw;
+}
+.cards .mini-cards figure {
+  overflow: hidden;
+}
+.cards .mini-cards figure img {
+  display: block;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.cards .mini-cards .info {
+  margin-top: 1rem;
+}
+.cards .mini-cards .info h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #1f1f1f;
+}
+.cards .mini-cards .info li {
+  list-style: disc;
+  margin-top: 0.6rem;
+  color: #1f1f1f;
+}
+.cards .mini-cards .info button {
+  margin-top: 2rem;
+  height: 7vh;
+  width: 25vw;
+  border: 1px solid #2f9dff;
+  color: #2f9dff;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.cards .mini-cards .info button:hover {
+  background: #2f9dff;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.cards .mini-cards:hover figure img {
+  transform: scale(1.5);
+}/*# sourceMappingURL=cards.css.map */

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gems & Rubys Resort</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel="stylesheet" href="../dist/css/cards.css">
+    <link rel="stylesheet" href="../dist/css/keyframes.css">
+    <link rel="stylesheet" href="../dist/css/responsive.css">
+    <link rel="shortcut icon" href="../img/head/short.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d3c96e30db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@200;300;400;600;700&family=Jost:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;400;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <section class="all" >
+        <img name="slide" class="img">
+        <header>
+            <nav data-aos="fade-down">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <ul id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <li><a href="index.html" class="underline">Home</a></li>
+                    <li><a href="room.html" class="underline active">Rooms</a></li>
+                    <li><a href="blog.html" class="underline">Blog</a></li>
+                    <li><a href="about.html" class="underline">About</a></li>
+                    <li><a href="contact.html" class="underline">Contact</a></li>
+                </ul>
+                <a href="#"><img src="../img/head/logo.png"></a>
+            </nav>
+            <div class="side">
+                <div class="icons" data-aos="fade-left">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="tab0">
+                    <button type="submit" onclick="showTab()" class="btn0 data-aos="fade-left"">Book A Room</button>
+                    <div class="room" id="roomSuit">
+                        <h2>Check Availability</h2>
+                        <input type="button" onclick="hideTab()"class="close" value="X">
+                        <div class="span">
+                            <div class="div">
+                                <label for="date">Check In Date</label><br>
+                                <input type="datetime-local" id="date">
+                            </div>
+                            <div class="div">
+                                <label for="date">Check In Date</label><br>
+                                <input type="datetime-local" id="date">
+                            </div>
+                        </div>
+                        <div class="span">
+                            <select>
+                                <option value="Adult">Adult</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <select>
+                                <option value="children">Children</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <select>
+                            <option value="room">Room Type</option>
+                            <option value="DR">Deluxe Room</option>
+                            <option value="LR">Laxaries Room</option>
+                            <option value="SR">Signature Room</option>
+                            <option value="CR">Couple Room</option>
+                        </select><br>
+                        <button type="submit" class="btn1">Check Availability</button>
+                    </div>
+                </div>                
+            </div>
+        </header>
+        <div class="autoplay" data-aos="fade-in">
+            <h2>Laxaries Rooms</h2>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="sect2">
+            <div class="title" data-aos="fade-in">
+                <h6>Our Offers</h6>
+                <h2>Ongoing Offers</h2>
+            </div>
+            <div class="cards">
+                <div class="mini-cards" data-aos="fade-right">
+                    <figure>
+                        <img src="../img/home/card/img1.png">
+                    </figure>
+                    <div class="info">
+                        <h4>Up to 35% savings on Club <br> rooms and Suits</h4>
+                        <li>Luxaries condition</li>
+                        <li>3 Adults & 2 Children size</li>
+                        <li>Sea view side</li>
+                        <button type="submit">Book Now</button>
+                    </div>
+                </div>
+                <div class="mini-cards" data-aos="fade-down">
+                    <figure>
+                        <img src="../img/home/card/img2.png">
+                    </figure>
+                    <div class="info">
+                        <h4>Up to 35% savings on Club <br> rooms and Suits</h4>
+                        <li>Luxaries condition</li>
+                        <li>3 Adults & 2 Children size</li>
+                        <li>Sea view side</li>
+                        <button type="submit">Book Now</button>
+                    </div>
+                </div>
+                <div class="mini-cards" data-aos="fade-left">
+                    <figure>
+                        <img src="../img/home/card/img3.png">
+                    </figure>
+                    <div class="info">
+                        <h4>Up to 35% savings on Club <br> rooms and Suits</h4>
+                        <li>Luxaries condition</li>
+                        <li>3 Adults & 2 Children size</li>
+                        <li>Sea view side</li>
+                        <button type="submit">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="sect5">
+            <div class="title" data-aos="fade-in">
+                <h6>Featured Rooms</h6>
+                <h2>Choose a Better Room</h2>
+            </div>
+            <div class="blocks">
+                <div class="mini-block" data-aos="fade-up">
+                    <img src="../img/home/rooms/img1.jpg">
+                    <div class="info">
+                        <div class="span">
+                            <h6>From $250/night</h6>
+                            <h4>Superior Room</h4>
+                        </div>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+                <div class="mini-block" data-aos="fade-right">
+                    <img src="../img/home/rooms/img2.jpg">
+                    <div class="info">
+                        <div class="span">
+                            <h6>From $250/night</h6>
+                            <h4>Superior Room</h4>
+                        </div>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+                <div class="mini-block" data-aos="fade-left">
+                    <img src="../img/home/rooms/img3.jpg">
+                    <div class="info">
+                        <div class="span">
+                            <h6>From $250/night</h6>
+                            <h4>Superior Room</h4>
+                        </div>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+                <div class="mini-block" data-aos="fade-down">
+                    <img src="../img/home/rooms/img4.jpg">
+                    <div class="info">
+                        <div class="span">
+                            <h6>From $250/night</h6>
+                            <h4>Superior Room</h4>
+                        </div>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section6">
+        <div class="sect6" data-aos="fade-in">
+            <h2>For Reservation or Query?</h2>
+            <button type="submit">+234 903 656 9089</button>
+        </div>
+    </section>
+
+    <footer data-aos="fade-in">
+        <div class="insta">
+            <div class="container">
+                <img src="../img/footer/instagram/img1.png">
+                <div class="overlay">
+                  <div class="text">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../img/footer/instagram/img2.png">
+                <div class="overlay">
+                  <div class="text">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../img/footer/instagram/img3.png">
+                <div class="overlay">
+                  <div class="text">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../img/footer/instagram/img4.png">
+                <div class="overlay">
+                  <div class="text">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../img/footer/instagram/img5.png">
+                <div class="overlay">
+                  <div class="text">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot1">
+                <h4>Address</h4>
+                <p>No 10 Calabar Street, Aba,<br> Abia State Nigeria</p>
+                <a href="#">Get Direction</a>
+            </div>
+            <div class="foot2">
+                <h4>Reservation</h4>
+                <h6>+234 903 656 9089</h6>
+                <p>drexydan@gmail.com</p>
+            </div>
+            <div class="foot3">
+                <h4>Navigation</h4>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+            </div>
+            <div class="foot4">
+                <h4>Newsletter</h4>
+                <div class="puts">
+                    <input type="email" placeholder="Enter your mail">
+                    <button type="submit">Sign Up</button>
+                </div>
+                <p>Subscribe newsletter to get updates</p>
+            </div>
+        </div>
+        <div class="rights">
+            <h5>Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="https://hits-blunts19.github.io/portfolio/css/index.html">TechBait</a></h5>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script src="../js/script.js"></script>
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 9000;
+
+        images[0] = '../img/head/back8.jpg';
+        // images[1] = '../img/head/back2.jpg';
+        // images[2] = '../img/head/back3.jpg';
+
+        function changeImg(){
+            document.slide.src = images[i];
+
+            if(i < images.length - 1){
+                i++;
+            } else{
+                i = 0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg;
+    </script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        var but = document.getElementById("roomSuit");
+
+        function showMenu(){
+            navLinks.style.left = "0";
+        }
+        function hideMenu(){
+            navLinks.style.left = "-200px";
+        }
+        function showTab(){
+            but.style.left = "25%";
+            but.style.opacity = "1";
+        }
+        function hideTab(){
+            but.style.left = "-800px";
+            but.style.opacity = "0";
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: true,
+        });
+    </script>
+</body>
+</html>

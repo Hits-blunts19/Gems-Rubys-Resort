@@ -1,0 +1,772 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: whitesmoke;
+  font-family: "Raleway", sans-serif;
+}
+
+.all {
+  height: 100vh;
+}
+.all .img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+  z-index: -1;
+}
+.all header {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+.all header nav .fa-xmark {
+  display: none;
+}
+.all header nav .fa-bars {
+  display: none;
+}
+.all header nav img {
+  height: 25vh;
+  margin-top: -5%;
+  margin-right: -10%;
+}
+.all header nav ul {
+  float: left;
+}
+.all header nav ul li {
+  display: inline-block;
+  line-height: 1.6rem;
+  margin-right: 3rem;
+  transition: 0.3s ease-in-out;
+}
+.all header nav ul li a {
+  color: #fff;
+}
+.all header nav ul li .active {
+  color: #fff;
+}
+.all header nav ul li .active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.all header nav ul .underline::after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  margin-top: 10%;
+  background: #fff;
+  content: "";
+  transition: 0.3s ease-in-out;
+}
+.all header nav ul .underline:hover {
+  color: #fff;
+}
+.all header nav ul .underline:hover::after {
+  width: 100%;
+}
+.all header .navbar-cng {
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  padding: 1.5rem 4rem;
+  left: 0;
+  top: 0;
+  background: #000;
+  z-index: 7;
+}
+.all header .side {
+  display: flex;
+  gap: 10rem;
+}
+.all header .side .icons {
+  display: flex;
+  gap: 2rem;
+}
+.all header .side .icons a {
+  color: #fff;
+}
+.all header .side .tab0 .btn0 {
+  padding: 1rem;
+  width: 10rem;
+  background: #2f9dff;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.all header .side .tab0 .btn0:hover {
+  background: #fff;
+  color: #2f9dff;
+  border: 1px solid #2f9dff;
+}
+.all header .side .tab0 .room {
+  height: 70vh;
+  width: 45vw;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  left: -800px;
+  top: 15%;
+  opacity: 0;
+  padding: 3rem 2rem;
+  transition: 0.5s ease-in-out;
+}
+.all header .side .tab0 .room h2 {
+  margin-top: -2rem;
+  font-size: 1.6rem;
+  color: #2f9dff;
+  font-weight: 600;
+}
+.all header .side .tab0 .room .close {
+  background: #2f9dff;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+}
+.all header .side .tab0 .room .span {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.all header .side .tab0 .room .span .div {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #3e3e3e;
+}
+.all header .side .tab0 .room .span .div input {
+  width: 19vw;
+  height: 8vh;
+  font-size: 1.2rem;
+  color: #6e6e6e;
+  cursor: pointer;
+}
+.all header .side .tab0 .room .span select {
+  width: 19vw;
+  height: 8vh;
+  font-size: 1.2rem;
+  color: #9e9e9e;
+  outline: none;
+  cursor: pointer;
+}
+.all header .side .tab0 .room select {
+  width: 40vw;
+  height: 8vh;
+  font-size: 1.2rem;
+  color: #9e9e9e;
+  margin-top: 2rem;
+  outline: none;
+  cursor: pointer;
+}
+.all header .side .tab0 .room .btn1 {
+  height: 8vh;
+  width: 40vw;
+  margin-top: 2rem;
+  background: #2f9dff;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.all header .side .tab0 .room .btn1:hover {
+  background: #fff;
+  color: #2f9dff;
+  border: 1px solid #2f9dff;
+}
+.all .autoplay {
+  position: relative;
+  text-align: center;
+  top: -50%;
+}
+.all .autoplay h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Raleway ", sans-serif;
+}
+.all .autoplay .carousel {
+  color: #fff;
+}
+.all .autoplay .carousel h1 {
+  font-size: 6rem;
+  font-family: "Lobster", sans-serif;
+  letter-spacing: 0.05em;
+}
+.all .autoplay .carousel p {
+  letter-spacing: 0.02em;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+}
+
+.section1 {
+  padding: 100px;
+}
+.section1 .sect1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.section1 .sect1 .left {
+  height: auto;
+  padding: 1rem;
+}
+.section1 .sect1 .left h6 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2f9dff;
+}
+.section1 .sect1 .left h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000;
+}
+.section1 .sect1 .left p {
+  letter-spacing: 0.02em;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #1f1f1f;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.section1 .sect1 .left a {
+  border-bottom: 1px solid #1f1f1f;
+  color: #1f1f1f;
+  padding-bottom: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+.section1 .sect1 .left a:hover {
+  color: #2f9dff;
+  border-bottom: 1px solid #2f9dff;
+}
+.section1 .sect1 .right {
+  display: flex;
+  gap: 1rem;
+  overflow: visible;
+  height: auto;
+}
+.section1 .sect1 .right img:nth-child(1) {
+  margin-right: 18rem;
+}
+.section1 .sect1 .right img:nth-child(2) {
+  margin-top: 3rem;
+  position: absolute;
+  margin-left: 18.3rem;
+  height: 70vh;
+  width: 22vw;
+}
+
+.section2 {
+  padding: 100px;
+}
+.section2 .sect2 .title {
+  text-align: center;
+}
+.section2 .sect2 .title h6 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2f9dff;
+}
+.section2 .sect2 .title h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+
+.section3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section3 .sect3 {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  text-align: center;
+  padding-top: 15rem;
+  color: #fff;
+}
+.section3 .sect3 h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.section3 .sect3 h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.section3 .sect3 i {
+  height: 4.5rem;
+  width: 4.5rem;
+  background: #fff;
+  color: #2f9dff;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.section3 .sect3 i:hover {
+  transform: scale(1.2);
+}
+
+.section4 {
+  padding: 100px;
+}
+.section4 .sect4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.section4 .sect4 .left {
+  height: auto;
+  padding: 1rem;
+}
+.section4 .sect4 .left h6 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2f9dff;
+}
+.section4 .sect4 .left h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000;
+}
+.section4 .sect4 .left p {
+  letter-spacing: 0.02em;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #1f1f1f;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.section4 .sect4 .left a {
+  border-bottom: 1px solid #1f1f1f;
+  color: #1f1f1f;
+  padding-bottom: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+.section4 .sect4 .left a:hover {
+  color: #2f9dff;
+  border-bottom: 1px solid #2f9dff;
+}
+.section4 .sect4 .right {
+  display: flex;
+  gap: 1rem;
+  overflow: visible;
+  height: auto;
+}
+.section4 .sect4 .right img:nth-child(1) {
+  margin-right: 18rem;
+}
+.section4 .sect4 .right img:nth-child(2) {
+  margin-top: 3rem;
+  position: absolute;
+  margin-left: 19rem;
+  height: 70vh;
+  width: 22vw;
+}
+
+.section5 {
+  padding-top: 100px;
+}
+.section5 .sect5 .title {
+  text-align: center;
+}
+.section5 .sect5 .title h6 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2f9dff;
+}
+.section5 .sect5 .title h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+.section5 .sect5 .blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  margin-top: 5rem;
+  overflow-x: hidden;
+}
+.section5 .sect5 .blocks .mini-block {
+  width: 49.4vw;
+  height: 60vh;
+  overflow: hidden;
+}
+.section5 .sect5 .blocks .mini-block img {
+  width: 100%;
+  height: 75vh;
+  transition: 0.5s ease-in-out;
+}
+.section5 .sect5 .blocks .mini-block:hover img {
+  transform: scale(1.1);
+}
+.section5 .sect5 .blocks .mini-block .info {
+  position: relative;
+  z-index: 2;
+  margin-top: -30%;
+  left: 5%;
+  display: flex;
+  gap: 24rem;
+}
+.section5 .sect5 .blocks .mini-block .info .span h6 {
+  font-size: 16px;
+  color: #2f9dff;
+}
+.section5 .sect5 .blocks .mini-block .info .span h4 {
+  font-size: 21px;
+  color: #fff;
+}
+.section5 .sect5 .blocks .mini-block .info a {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  padding-bottom: 1rem;
+  height: 4vh;
+  margin-top: -3rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.section5 .sect5 .blocks .mini-block .info a:hover {
+  border-bottom: 1px solid #2f9dff;
+  color: #2f9dff;
+}
+.section5 .sect5 .blocks .mini-block:hover .info a {
+  opacity: 1;
+  margin-top: 0;
+}
+
+.section6 {
+  padding: 70px 200px;
+}
+.section6 .sect6 {
+  border: 1px solid #8e8e8e;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.section6 .sect6 h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.section6 .sect6 button {
+  width: 20vw;
+  height: 3.5rem;
+  border-radius: 50px;
+  border: 1px solid #2f9dff;
+  background: #2f9dff;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.section6 .sect6 button:hover {
+  background: transparent;
+  border: 1px solid #2f9dff;
+  color: #2f9dff;
+}
+
+footer {
+  background: #000;
+}
+footer .insta {
+  display: flex;
+  gap: 0;
+}
+footer .insta .container {
+  position: relative;
+  height: 40vh;
+  width: 20vw;
+  overflow: hidden;
+}
+footer .insta .container img {
+  display: block;
+  max-width: 100%;
+  transition: 0.5s ease-in-out;
+}
+footer .insta .container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  overflow: hidden;
+  width: 0;
+  height: 40vh;
+  transition: 0.5s ease;
+}
+footer .insta .container .overlay .text {
+  white-space: nowrap;
+  font-size: 25px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+footer .insta .container .overlay .text a {
+  color: #fff;
+}
+footer .insta .container:hover .overlay {
+  width: 100%;
+}
+footer .insta .container:hover img {
+  transform: scale(1.1);
+}
+footer .foot {
+  padding: 70px 100px;
+  color: #a8a7a2;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot .foot1 h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+footer .foot .foot1 p {
+  letter-spacing: 0.02em;
+  line-height: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+footer .foot .foot1 a {
+  border-bottom: 1px solid #a8a7a2;
+  color: #a8a7a2;
+  padding-bottom: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+footer .foot .foot1 a:hover {
+  color: #2f9dff;
+  border-bottom: 1px solid #2f9dff;
+}
+footer .foot .foot2 h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+footer .foot .foot2 h6 {
+  margin-top: 3rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .foot .foot3 h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+footer .foot .foot3 li {
+  margin-top: 1rem;
+}
+footer .foot .foot3 li a {
+  color: #a8a7a2;
+}
+footer .foot .foot4 h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+footer .foot .foot4 .puts {
+  display: flex;
+  gap: 0;
+}
+footer .foot .foot4 .puts input {
+  height: 7vh;
+  width: 18vw;
+  outline: none;
+  font-size: 15px;
+  padding-left: 1rem;
+}
+footer .foot .foot4 .puts input:focus::-moz-placeholder {
+  color: transparent;
+}
+footer .foot .foot4 .puts input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+footer .foot .foot4 .puts input:focus::placeholder {
+  color: transparent;
+}
+footer .foot .foot4 .puts button {
+  width: 7vw;
+  background: #2f9dff;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+footer .foot .foot4 p {
+  letter-spacing: 0.02em;
+  margin-top: 1rem;
+}
+footer .rights {
+  display: flex;
+  color: #a8a7a2;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-top: 1px solid #a8a7a2;
+  padding-top: 3rem;
+  height: 20vh;
+}
+footer .rights h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer .rights h5 a {
+  color: #2f9dff;
+}
+footer .rights .icons {
+  display: flex;
+  gap: 2rem;
+}
+footer .rights .icons i {
+  color: #fff;
+}
+
+.section9 {
+  padding: 100px;
+}
+.section9 .sect9 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.section9 .sect9 .serve {
+  width: 50vw;
+  padding: 1rem;
+}
+.section9 .sect9 .serve h4 {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+}
+.section9 .sect9 .serve p {
+  letter-spacing: 0.02em;
+  line-height: 1.6rem;
+  font-size: 15px;
+  margin-top: 2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.02rem;
+}
+
+.End {
+  padding: 100px;
+}
+.End .sectEnd {
+  display: flex;
+  gap: 0;
+  height: auto;
+  width: 100%;
+  box-shadow: 0px 0px 10px 10px rgba(202, 202, 202, 0.4);
+  overflow: hidden;
+}
+.End .sectEnd .contact {
+  width: 50%;
+  padding: 3rem;
+}
+.End .sectEnd .contact h2 {
+  font-size: 25px;
+  font-weight: 550;
+  color: #000;
+}
+.End .sectEnd .contact .par {
+  font-size: 15px;
+  color: #7e7e7e;
+}
+.End .sectEnd .contact .dress {
+  display: flex;
+  gap: 1rem;
+  margin-top: 6%;
+}
+.End .sectEnd .contact .dress .tact h5 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.End .sectEnd .contact .dress .tact p {
+  font-size: 14px;
+  color: #7e7e7e;
+}
+.End .sectEnd .contact .puts {
+  margin-top: 6%;
+}
+.End .sectEnd .contact .puts input {
+  width: 100%;
+  height: 7vh;
+  margin-bottom: 3%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+.End .sectEnd .contact .puts input:hover {
+  border-bottom: 1px solid #2f9dff;
+}
+.End .sectEnd .contact .puts textarea {
+  width: 100%;
+  margin-bottom: 3%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+.End .sectEnd .contact .puts button {
+  padding: 0.5rem;
+  border: transparent;
+  background: #2f9dff;
+  color: #fff;
+  border-radius: 5px;
+}
+.End .sectEnd .contact .socialmed {
+  margin-top: 6%;
+}
+.End .sectEnd .contact .socialmed h5 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.End .sectEnd .contact .socialmed .brands {
+  margin-top: 3%;
+  display: flex;
+  gap: 1rem;
+}
+.End .sectEnd .contact .socialmed .brands a {
+  height: 2rem;
+  width: 2rem;
+  border: 0.5px solid #2f9dff;
+  text-align: center;
+  padding-top: 0.5rem;
+  border-radius: 50px;
+  color: #2f9dff;
+  transition: 0.3s ease-in-out;
+}
+.End .sectEnd .contact .socialmed .brands a:hover {
+  color: #fff;
+  background: #2f9dff;
+}
+.End .sectEnd iframe {
+  width: 50%;
+}/*# sourceMappingURL=main.css.map */
